@@ -10,8 +10,8 @@ DApp = {
     // set to true to use with local blockchain
     development: true,
     //Rinkeby:
-    factoryAddress: "0xe47684d658872fbde11c82036099a12c066c4fa3",
-    tokenAddress: "0x86b32525e687500ed4a665d1b16fef526cdd6f10",
+    factoryAddress: "0x7Ea9e8712F5e603a99aeB1A222E1668671C0570D",
+    tokenAddress: "0xa875C9e871675389508f27ce80cc6C03589a4eFd",
 
     init: function() {
         console.log("[x] Initializing DApp.");
@@ -59,7 +59,7 @@ DApp = {
             console.log("[x] TimeLockedWalletFactory contract initialized.");
 
             //hardcoding ToptalToken for simplicity
-            $.getJSON('../contracts/ToptalToken.json', function(toptalTokenContract){
+            $.getJSON('../contracts/JHGToken.json', function(toptalTokenContract){
                 DApp.toptalTokenContract = TruffleContract(toptalTokenContract);
                 DApp.toptalTokenContract.setProvider(DApp.web3Provider);
                 console.log("[x] ToptalToken contract initialized.");
