@@ -31,8 +31,8 @@
 const WalletProvider = require("truffle-hdwallet-provider");
 // const Wallet = require('ethereumjs-wallet');
 
-var rinkebyPrivateKeys = ["6241164E493F1D4F21B82CD9064FAD2B8FF1DAE08A1411D528EF13CFC23C2515"];
-var krwlocalPrivateKeys = ["6241164E493F1D4F21B82CD9064FAD2B8FF1DAE08A1411D528EF13CFC23C2515"];
+var rinkebyPrivateKeys = ["Private Key"];
+var krwlocalPrivateKeys = ["Private Key"];
 //, "hex");
 //var rinkebyWallet = Wallet.fromPrivateKey(rinkebyPrivateKey);
 var rinkebyProvider = new WalletProvider(rinkebyPrivateKeys, "https://rinkeby.infura.io/");
